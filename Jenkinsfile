@@ -1,9 +1,9 @@
  stages {
+ 
+ 
         stage('Test') {
             steps {
-                /* `make check` returns non-zero on test failures,
-                * using `true` to allow the Pipeline to continue nonetheless
-                */
+               git url: 'https://github.com/josepinto1974/meu.git', branch: 'master'
                 sh 'make check || true' 
-                junit '**/target/*.xml' 
+                
             }
