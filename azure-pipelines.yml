@@ -1,5 +1,8 @@
 stages:
 - stage: estadoA 
   displayName: estadoAA
-pool:
-  vmImage: 'windows-2019' 
+  jobs;
+    - job: jobaA
+      displayname: Jovb
+       pool:
+         vmImage: 'windows-2019' 
