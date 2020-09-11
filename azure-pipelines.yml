@@ -4,5 +4,5 @@ stages:
   jobs:
     - job: jobaA
       displayname: Jovb
-       pool:
+      pool:
          vmImage: 'windows-2019' 
