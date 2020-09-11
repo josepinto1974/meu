@@ -1,7 +1,7 @@
 stages:
 - stage: estadoA 
   displayName: estadoAA
-  jobs;
+  jobs:
     - job: jobaA
       displayname: Jovb
        pool:
