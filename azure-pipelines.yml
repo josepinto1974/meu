@@ -1,5 +1,5 @@
 stages_
-- stage: estadoA 
+  stage: estadoA 
 displayname: estadoAA
 pool:
   vmImage: 'windows-2019' 
