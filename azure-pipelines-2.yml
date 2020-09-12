@@ -1,4 +1,4 @@
-stages:
+          stages:
 - stage: estadoA 
   displayName: estadoAA
   jobs:
@@ -11,9 +11,11 @@ stages:
       pool:
         vmImage: 'windows-2019'
       steps:
+      - powershell: Write-Host Hello $(name)
+      displayName: Say hello
+      name: firstStep
+      workingDirectory: $(build.sourcesDirectory)
+      failOnStderr: true
+      env:
+         name: Microsoft
 
-      - task: PowerShell@2
-        inputs:
-          powershell: 'echo Write your commands here.' 
-          #workingDirectory: # Optional
-          #failOnStderr: false # Optional
