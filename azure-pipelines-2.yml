@@ -9,7 +9,7 @@ stages:
     - job: JOBBBB
       displayName: job2
       pool:
-        vmImage: 'windows-2019'
+        vmImage: 'vs2017-win2016'
       steps:
 
       - task: PowerShell@2
