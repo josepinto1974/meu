@@ -11,6 +11,7 @@ stages:
       displayName: job2
       pool:
         vmImage: 'windows-2019'
+        steps:
   - task: CmdLine@2
   inputs:
     script: 'echo Write your commands here.' 
