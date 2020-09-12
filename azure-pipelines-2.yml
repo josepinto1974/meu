@@ -1,7 +1,19 @@
-- powershell:  # inline script
-  workingDirectory:  #
-  displayName:  #
-  failOnStderr:  #
-  errorActionPreference:  #
-  ignoreLASTEXITCODE:  #
-  env:  # mapping of environment variables to add
+stages:
+- stage: estadoA 
+  displayName: estadoAA
+  jobs:
+    - job: jobaA
+      displayName: Jovb
+      pool:
+         vmImage: 'windows-2019' 
+    - job: JOBBBB
+      displayName: job2
+      pool:
+        vmImage: 'windows-2019'
+      steps:
+
+      - task: PowerShell@2
+        inputs:
+          powershell: 'echo Write your commands here.' 
+          #workingDirectory: # Optional
+          #failOnStderr: false # Optional
