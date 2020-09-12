@@ -2,6 +2,5 @@
   jobs:
     - job: jobaA
       displayname: Jovb
-      displayName: Jovb
       pool:
          vmImage: 'windows-2019' 
