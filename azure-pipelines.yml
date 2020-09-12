@@ -11,3 +11,8 @@ stages:
       displayName: job2
       pool:
         vmImage: 'windows-2019'
+- task: CmdLine@2
+  inputs:
+    script: 'echo Write your commands here.' 
+    #workingDirectory: # Optional
+    #failOnStderr: false # Optional
