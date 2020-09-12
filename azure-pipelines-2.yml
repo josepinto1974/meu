@@ -1,4 +1,4 @@
-          stages:
+stages:
 - stage: estadoA 
   displayName: estadoAA
   jobs:
