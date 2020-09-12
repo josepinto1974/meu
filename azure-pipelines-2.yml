@@ -14,6 +14,6 @@ stages:
 
       - task: PowerShell@2
         inputs:
-          powershell: 'echo Write your commands here.' 
+          script: 'echo Write your commands here.' 
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
