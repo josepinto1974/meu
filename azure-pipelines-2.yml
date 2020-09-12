@@ -11,10 +11,6 @@ stages:
       pool:
         vmImage: 'windows-2019'
       steps:
-      - powershell: Write-Host Hello $(name)
-      name: firstStep
-      workingDirectory: $(build.sourcesDirectory)
-      failOnStderr: true
-      env:
-         name: Microsoft
+      - powershell: Write-Host Hello name
+      
 
