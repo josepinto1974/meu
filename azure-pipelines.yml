@@ -4,7 +4,7 @@ stages:
   jobs:
     - job: jobaA
       displayName: Jovb
-       script: 'echo Write your commands here.'
+      script: 'echo Write your commands here.'
       pool:
          vmImage: 'windows-2019' 
     - job: JOBBBB
