@@ -12,8 +12,8 @@ stages:
         vmImage: 'windows-2019'
       steps:
 
-      - task: PowerShell@2
+      - task: 
         inputs:
-          script: 'echo Write your commands here.' 
+          powershell: 'echo Write your commands here.' 
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
