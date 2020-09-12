@@ -1,17 +1,19 @@
-# HTML
-# Archive your static HTML project and save it with the build record.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+stages:
+- stage: estadoA 
+  displayName: estadoAA
+  jobs:
+    - job: jobaA
+      displayName: Jovb
+      pool:
+         vmImage: 'windows-2019' 
+    - job: JOBBBB
+      displayName: job2
+      pool:
+        vmImage: 'windows-2019'
+      steps:
 
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+      - task: CmdLine@2
+        inputs:
+          script: 'echo Write your commands here.' 
+          #workingDirectory: # Optional
+          #failOnStderr: false # Optional
